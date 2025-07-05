@@ -1,0 +1,38 @@
+{
+  "folders": [
+    {
+      "name": "🎵 wanita",
+      "path": "..",
+    }
+  ],
+  "settings": {
+    "files.exclude": {},
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/dist": true,
+      "**/build": true
+    },
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "boundary",
+    "chat.mcp.discovery.enabled": true,
+    "[json]": {
+      "editor.quickSuggestions": {
+        "strings": true
+      },
+      "editor.suggest.insertMode": "replace"
+    },
+    "chat.promptFiles": true,
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "github.copilot.chat.localeOverride": "ko",
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+      {
+        "text": "2~3줄 정도로 설명을 넣어주고, 이모지를 많이 사용해줘"
+      }
+    ],
+  }
+}

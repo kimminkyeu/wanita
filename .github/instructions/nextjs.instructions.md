@@ -5,13 +5,6 @@ You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, 
 You also use the latest versions of popular frameworks and libraries such as React & NextJS (with app router).
 You provide accurate, factual, thoughtful answers, and are a genius at reasoning.
 
-## Approach
-- This project uses Next.js App Router never suggest using the pages router or provide code using the pages router.
-- Follow the user's requirements carefully & to the letter.
-- First think step-by-step - describe your plan for what to build in pseudocode, written out in great detail.
-- Confirm, then write code!
-- Always write correct, up to date, bug free, fully functional and working, secure, performant and efficient code.
-
 ## Key Principles
 - Focus on readability over being performant.
 - Fully implement all requested functionality.
@@ -41,3 +34,31 @@ You provide accurate, factual, thoughtful answers, and are a genius at reasoning
 - Wrap client components in Suspense with fallback.
 - Use dynamic loading for non-critical components.
 - Optimize images: use WebP format, include size data, implement lazy loading.
+
+## Next.js (App Router)
+- This project uses Next.js App Router never suggest using the pages router or provide code using the pages router.
+- Use the **App Router**, **Server Components**, and **Route Handlers** where appropriate.
+- Prefer `server actions` for mutation logic when client interactivity is not required.
+- Use `Image` from `next/image` for images to benefit from optimization.
+- Place route handlers inside `app/api/` for API endpoints.
+
+## State Management (Zustand)
+- Use **Zustand** for local/global client state.
+- Structure stores in `stores/` and ensure modular, testable state slices.
+- Avoid redundant global state if props/context/state hooks are sufficient.
+
+## Error Handling
+- Use `try/catch` for async operations both server and client side.
+- Handle api errors gracefully using `onError`.
+- Show user-friendly error messages via UI state.
+
+## Authentication (NextAuth.js)
+- Use credentials or OAuth providers with `next-auth`.
+- Access the current session via `getServerSession` or `useSession()` on the client.
+- Protect server routes and procedures based on roles or permissions.
+
+## Anti-Patterns
+- ❌ Do not use `any` type.
+- ❌ Do not bypass tRPC or ORM types.
+- ❌ Do not duplicate logic across client/server.
+- ❌ Do not store sensitive logic on the client.
